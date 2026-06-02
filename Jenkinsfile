@@ -100,8 +100,9 @@ pipeline {
                 '''
             }
         }
+        */
     }
-*/
+
     post {
         success {
             echo "Secure deployment completed successfully!"
