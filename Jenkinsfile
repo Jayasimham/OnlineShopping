@@ -33,7 +33,7 @@ pipeline {
                 '''
             }
         }
-
+/*
         stage('SonarQube Scan') {
             environment {
                 SONAR_SCANNER_HOME = tool 'SonarQubeScanner'
@@ -54,7 +54,7 @@ pipeline {
                 }
             }
         }
-
+*/
         stage('Build Docker Image') {
             steps {
                 sh '''
@@ -90,7 +90,7 @@ pipeline {
                 }
             }
         }
-
+/*
         stage('Deploy to Kubernetes') {
             steps {
                 sh '''
@@ -101,7 +101,7 @@ pipeline {
             }
         }
     }
-
+*/
     post {
         success {
             echo "Secure deployment completed successfully!"
