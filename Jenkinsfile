@@ -8,13 +8,13 @@ pipeline {
     }
 
     stages {
-
+/*
         stage('Checkout') {
             steps {
                 git branch: 'main', url: 'https://github.com/sivaprasadpappala/OnlineShopping.git'
             }
         }
-
+*/
         stage('Install Dependencies') {
             steps {
                 sh '''
