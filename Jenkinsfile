@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "mjayasimhareddy/jenkinsjobimage/online-shop"
+        IMAGE_NAME = "mjayasimhareddy/jenkinsjobimage"
         K8S_NAMESPACE = "default"
         KUBECONFIG = "/var/lib/jenkins/.kube/config"
     }
